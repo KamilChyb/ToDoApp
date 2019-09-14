@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ddd;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+div.date {
+  position: relative;
+  min-height: 30%;
+  width: 500px;
+  background-image: url(images/landscape-4258253_640.jpg);
+  background-size: cover;
+}
+
+h1.date {
+  font-size: 35px;
+  padding: 20px;
+  color: white;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+section.add,
+section.search,
+section.list {
+  display: flex;
+  justify-content: center;
+  min-height: 10%;
+  align-items: center;
+  width: 500px;
+  position: relative;
+  border-bottom: solid lightgrey 2px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+section.search > h3,
+section.add > h3 {
+  padding-right: 5px;
+}
+
+ul.list {
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+  padding: 10px;
+  border-bottom: solid lightgrey 2px;
+  font-size: 20px;
+}
+
+.fa-sync-alt {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fa-sync-alt:hover {
+  color: black;
+  transform: rotate(360deg);
+}
+
+button.add {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  border: solid lightcoral 2px;
+  background-color: lightcoral;
+  color: white;
+  font-size: 30px;
+  border-radius: 50% 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+span.add {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: arial;
+}
+
+input.add,
+input.search {
+  height: 30px;
+  width: 210px;
+  font-size: 20px;
+}
+
+button.add:hover {
+  color: lightcoral;
+  border: solid lightcoral 2px;
+  background-color: white;
+}
+
+.fa-trash-alt:hover {
+  color: red;
+}
+
+.fa-trash-alt,
+.fa-circle,
+.fa-check-circle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.fa-trash-alt {
+  right: 30px;
+}
+
+.fa-circle {
+  left: 30px;
+}
+
+.fa-check-circle {
+  left: 30px;
+  color: green;
+}
