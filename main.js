@@ -46,7 +46,6 @@ const addTask = e => {
     '<i class="far fa-trash-alt"></i>';
   tasks.push(task);
   renderList();
-  list.appendChild(task);
   inputAdd.value = "";
   taskSpan.textContent = tasks.length;
   task.querySelector(".fa-trash-alt").addEventListener("click", removeTask);
